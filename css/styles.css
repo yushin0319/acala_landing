@@ -20,7 +20,13 @@ h1 {
 .contact {
   margin: 40px;
   padding: 20px;
+  text-align: center;
   background-color: #f4f4f4;
+}
+
+div {
+  width: 100%;
+  text-align: center;
 }
 
 footer {
