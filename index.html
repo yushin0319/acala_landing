@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acala - サバイバルゲームフィールド</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
   <body>
     <header>
-      <img src="images/main.png" alt="Acalaメイン画像" />
       <h1>Acala</h1>
     </header>
+
+    <section class="background">
+      <img src="images/001.jpg" alt="背景画像" />
+    </section>
 
     <section class="about">
       <h2>CONCEPT</h2>
@@ -23,17 +31,66 @@
 
     <section class="gallery">
       <h2>GALLERY</h2>
-      <!-- 画像などのギャラリーコンテンツ -->
+      <div>
+        <ul class="slider">
+          <li><img src="images/002.jpg" alt="" /></li>
+          <li><img src="images/003.jpg" alt="" /></li>
+          <li><img src="images/004.jpg" alt="" /></li>
+          <li><img src="images/005.jpg" alt="" /></li>
+          <li><img src="images/006.jpg" alt="" /></li>
+          <li><img src="images/007.jpg" alt="" /></li>
+          <li><img src="images/008.jpg" alt="" /></li>
+          <li><img src="images/009.jpg" alt="" /></li>
+          <li><img src="images/010.jpg" alt="" /></li>
+          <!--/slider-->
+        </ul>
+      </div>
     </section>
 
     <section class="contact">
       <h2>ご連絡はこちら</h2>
-      <!-- 連絡先フォーム -->
+      <div class="Form">
+        <div class="Form-Item">
+          <p class="Form-Item-Label">
+            <span class="Form-Item-Label-Required">必須</span>氏名
+          </p>
+          <input
+            type="text"
+            class="Form-Item-Input"
+            placeholder="例）山田太郎"
+          />
+        </div>
+
+        <div class="Form-Item">
+          <p class="Form-Item-Label">
+            <span class="Form-Item-Label-Required">必須</span>メールアドレス
+          </p>
+          <input
+            type="email"
+            class="Form-Item-Input"
+            placeholder="例）example@gmail.com"
+          />
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label isMsg">
+            <span class="Form-Item-Label-Required">必須</span>お問い合わせ内容
+          </p>
+          <textarea class="Form-Item-Textarea"></textarea>
+        </div>
+        <input type="submit" class="Form-Btn" value="送信する" />
+      </div>
     </section>
 
     <footer>
       <p>&copy; 2023 Acala. All rights reserved.</p>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--自作のJS-->
 
     <script src="js/script.js"></script>
   </body>
