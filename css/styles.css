@@ -66,7 +66,7 @@ h1 {
 .about,
 .gallery,
 .contact {
-  margin: 20px;
+  margin: 10px;
   padding: 10px;
   background-color: #f4f4f4;
 }
@@ -185,8 +185,6 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .Form-Item {
-    padding-left: 14px;
-    padding-right: 14px;
     padding-top: 16px;
     padding-bottom: 16px;
     flex-wrap: wrap;
