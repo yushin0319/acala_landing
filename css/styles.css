@@ -71,23 +71,37 @@ h1 {
 .gallery,
 .contact {
   margin: 10px;
-  padding: 10px;
+  padding: 20px;
   background-color: #f4f4f4;
 }
 
 .gallery {
-  margin: 20px;
+  margin: 10px;
   align-items: center;
+}
+
+.spacer {
+  height: 130px;
+}
+
+@media screen and (max-width: 480px) {
+  .spacer {
+    height: 100px;
+  }
 }
 
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
+
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 /*==================================================
@@ -181,7 +195,7 @@ footer {
 }
 .Form-Item {
   border-top: 1px solid #ddd;
-  padding-top: 24px;
+  padding-top: 12px;
   padding-bottom: 24px;
   width: 100%;
   display: flex;
@@ -288,7 +302,7 @@ footer {
 }
 .Form-Btn {
   border-radius: 6px;
-  margin-top: 32px;
+  margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
@@ -303,7 +317,32 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .Form-Btn {
-    margin-top: 24px;
+    margin-top: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+  }
+}
+
+.reserve-Btn {
+  border-radius: 6px;
+  margin-top: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #c85b5b;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+  .reserve-Btn {
+    margin-top: 2px;
     padding-top: 8px;
     padding-bottom: 8px;
     width: 160px;
